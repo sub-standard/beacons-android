@@ -52,7 +52,7 @@ public class iBeaconAdvertiser extends Advertiser {
         // an advertisement packet can have at most 31 bytes; iBeacon uses 30
         mAdvertiseData = new AdvertiseData.Builder()
                 .setIncludeTxPowerLevel(false)
-                .setIncludeDeviceName(true)
+                .setIncludeDeviceName(false)
                 .addManufacturerData(COMPANY_ID_APPLE, manufacturerData)
                 .build();
     }
